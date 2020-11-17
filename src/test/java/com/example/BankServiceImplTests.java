@@ -18,12 +18,12 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
  * Besides helping catch bugs early, tests are a great way for a new developer to learn an API as he or she can see the
  * API in action. Tests also help validate a design as they are a measure for how easy it is to use your code.
  */
-public class RewardNetworkImplTests {
+public class BankServiceImplTests {
 
 	/**
 	 * The object being tested.
 	 */
-	private RewardNetworkImpl rewardNetwork;
+	private BankServiceImpl rewardNetwork;
 
 	@BeforeEach
 	public void setUp() throws Exception {
@@ -33,7 +33,7 @@ public class RewardNetworkImplTests {
 		RewardRepository rewardRepo = new StubRewardRepository();
 
 		// setup the object being tested by handing what it needs to work
-		rewardNetwork = new RewardNetworkImpl(accountRepo, restaurantRepo, rewardRepo);
+		rewardNetwork = new BankServiceImpl(accountRepo, restaurantRepo, rewardRepo);
 	}
 
 	// TODO-03: Test RewardNetworkImpl class

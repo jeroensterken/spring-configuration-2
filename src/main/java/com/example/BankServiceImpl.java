@@ -6,13 +6,13 @@ import com.example.account.AccountRepository;
 import com.example.person.PersonRepository;
 import com.example.profile.ProfileRepository;
 
-public class RewardNetworkImpl implements RewardNetwork {
+public class BankServiceImpl implements BankService {
 
 	private AccountRepository accountRepository;
 	private PersonRepository personRepository;
 	private ProfileRepository profileRepository;
 
-	public RewardNetworkImpl(AccountRepository accountRepository, PersonRepository personRepository, ProfileRepository profileRepository) {
+	public BankServiceImpl(AccountRepository accountRepository, PersonRepository personRepository, ProfileRepository profileRepository) {
 		this.accountRepository = accountRepository;
 		this.personRepository = personRepository;
 		this.profileRepository = profileRepository;
