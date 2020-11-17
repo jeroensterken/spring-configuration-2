@@ -1,4 +1,4 @@
-package rewards.internal.person;
+package com.example.person;
 
 public class Person {
 

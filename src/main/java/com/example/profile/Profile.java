@@ -1,4 +1,4 @@
-package rewards.internal.profile;
+package com.example.profile;
 
 public class Profile {
 

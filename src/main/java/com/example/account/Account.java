@@ -1,4 +1,4 @@
-package rewards.internal.account;
+package com.example.account;
 
 public class Account  {
 

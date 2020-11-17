@@ -1,17 +1,15 @@
-package rewards.internal;
+package com.example;
 
-import rewards.Confirmation;
-import rewards.internal.account.Account;
-import rewards.internal.account.AccountRepository;
-import rewards.internal.person.PersonRepository;
-import rewards.internal.profile.ProfileRepository;
+import com.Confirmation;
+import com.example.account.Account;
+import com.example.account.AccountRepository;
+import com.example.person.PersonRepository;
+import com.example.profile.ProfileRepository;
 
 public class RewardNetworkImpl implements RewardNetwork {
 
 	private AccountRepository accountRepository;
-
 	private PersonRepository personRepository;
-
 	private ProfileRepository profileRepository;
 
 	public RewardNetworkImpl(AccountRepository accountRepository, PersonRepository personRepository, ProfileRepository profileRepository) {

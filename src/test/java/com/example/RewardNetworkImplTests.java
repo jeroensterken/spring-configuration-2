@@ -1,13 +1,12 @@
-package rewards.internal;
+package com.example;
 
 import common.money.MonetaryAmount;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import rewards.Dining;
-import rewards.Confirmation;
-import rewards.internal.account.AccountRepository;
-import rewards.internal.restaurant.RestaurantRepository;
+import com.Confirmation;
+import com.example.account.AccountRepository;
+import com.example.restaurant.RestaurantRepository;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

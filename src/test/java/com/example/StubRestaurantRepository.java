@@ -1,10 +1,10 @@
-package rewards.internal;
+package com.example;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import rewards.internal.restaurant.Restaurant;
-import rewards.internal.restaurant.RestaurantRepository;
+import com.example.restaurant.Restaurant;
+import com.example.restaurant.RestaurantRepository;
 
 import common.money.Percentage;
 

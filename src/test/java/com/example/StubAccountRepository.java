@@ -1,10 +1,10 @@
-package rewards.internal;
+package com.example;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import rewards.internal.account.Account;
-import rewards.internal.account.AccountRepository;
+import com.example.account.Account;
+import com.example.account.AccountRepository;
 
 public class StubAccountRepository implements AccountRepository {
 

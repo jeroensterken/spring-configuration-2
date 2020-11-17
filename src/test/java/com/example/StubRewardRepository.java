@@ -1,9 +1,8 @@
-package rewards.internal;
+package com.example;
 
 import java.util.Random;
 
-import rewards.Dining;
-import rewards.Confirmation;
+import com.Confirmation;
 
 /**
  * A dummy reward repository implementation.

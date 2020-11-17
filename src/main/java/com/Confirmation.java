@@ -1,4 +1,4 @@
-package rewards;
+package com;
 
 public class Confirmation {
 

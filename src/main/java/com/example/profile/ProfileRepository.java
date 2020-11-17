@@ -1,6 +1,4 @@
-package rewards.internal.profile;
-
-import rewards.internal.person.Person;
+package com.example.profile;
 
 public interface ProfileRepository {
 

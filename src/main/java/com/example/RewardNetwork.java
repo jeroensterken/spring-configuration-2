@@ -1,7 +1,7 @@
-package rewards.internal;
+package com.example;
 
-import rewards.Confirmation;
-import rewards.internal.account.Account;
+import com.Confirmation;
+import com.example.account.Account;
 
 public interface RewardNetwork {
 
