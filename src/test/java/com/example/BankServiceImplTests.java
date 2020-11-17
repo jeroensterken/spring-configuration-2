@@ -23,9 +23,6 @@ public class BankServiceImplTests {
 		bankService = new BankServiceImpl(accountRepo, personRepo, profileRepo);
 	}
 
-	// TODO-03: Test RewardNetworkImpl class
-	// - Remove the @Disabled annotation below.
-	// - Run this JUnit test. Verify it passes.
 	@Test
 	public void testTransferMoney() {
 		String accFrom = "123456789";
