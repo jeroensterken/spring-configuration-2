@@ -28,13 +28,14 @@ public class BankServiceImplTests {
 	// - Run this JUnit test. Verify it passes.
 	@Test
 	@Disabled
-	public void testRewardForDining() { //Long id, String number, String name
-		Account from = new Account(1L, "123498764567", "doctor who");
-		Account to = new Account(1L, "123498764567", "iron man");
+	public void testTransferMoney() {
+		String accFrom = "123456789";
+		String accTo = "987654321";
 
-		Confirmation confirmation = bankService.transferMoney(from, to, 100L);
+		Confirmation confirmation = bankService.transferMoney(accFrom, accTo, 100L);
 
 		assertNotNull(confirmation);
 		assertNotNull(confirmation.getConfirmationNumber());
+		assertNotNull(confirmation.getMessage());
 	}
 }
