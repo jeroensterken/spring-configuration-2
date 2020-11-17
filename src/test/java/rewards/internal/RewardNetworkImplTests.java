@@ -4,12 +4,10 @@ import common.money.MonetaryAmount;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import rewards.AccountContribution;
 import rewards.Dining;
-import rewards.RewardConfirmation;
+import rewards.Confirmation;
 import rewards.internal.account.AccountRepository;
 import rewards.internal.restaurant.RestaurantRepository;
-import rewards.internal.reward.RewardRepository;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -49,7 +47,7 @@ public class RewardNetworkImplTests {
 		Dining dining = Dining.createDining("100.00", "1234123412341234", "1234567890");
 
 		// call the 'rewardNetwork' to test its rewardAccountFor(Dining) method
-		RewardConfirmation confirmation = rewardNetwork.rewardAccountFor(dining);
+		Confirmation confirmation = rewardNetwork.rewardAccountFor(dining);
 
 		// assert the expected reward confirmation results
 		assertNotNull(confirmation);
