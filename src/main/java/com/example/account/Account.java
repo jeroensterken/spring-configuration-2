@@ -5,7 +5,7 @@ public class Account  {
 	private Long id;
 	private String accountNumber;
 	private String name;
-	private Long balance;
+	private Long balance = 100L;
 
 	public Account() {
 	}
