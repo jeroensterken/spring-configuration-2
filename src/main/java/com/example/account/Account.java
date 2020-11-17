@@ -6,6 +6,9 @@ public class Account  {
 	private String number;
 	private String name;
 
+	public Account() {
+	}
+
 	public Account(Long id, String number, String name) {
 		this.id = id;
 		this.number = number;

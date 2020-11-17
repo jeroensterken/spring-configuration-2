@@ -19,7 +19,7 @@ public class BankServiceImpl implements BankService {
 	}
 
 	public Confirmation transferMoney(Account from, Account to, Long amount) {
-		// TODO-01: Reward an account per the sequence diagram
+		// TODO-01: transfer money from account 'from', to account 'to' per the sequence diagram
 		// TODO-02: Return the corresponding reward confirmation
 		return null;
 	}
