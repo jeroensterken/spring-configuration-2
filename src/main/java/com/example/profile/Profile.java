@@ -21,6 +21,10 @@ public class Profile {
         this.name = name;
     }
 
+    public boolean isLoyal() {
+        return true;
+    }
+
     public Long getId() {
         return id;
     }
