@@ -27,7 +27,7 @@ public class BankServiceImplTests {
 	// - Remove the @Disabled annotation below.
 	// - Run this JUnit test. Verify it passes.
 	@Test
-	public void testRewardForDining() {
+	public void testTransferMoney() {
 		String accFrom = "123456789";
 		String accTo = "987654321";
 
