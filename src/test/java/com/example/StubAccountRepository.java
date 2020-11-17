@@ -23,6 +23,9 @@ public class StubAccountRepository implements AccountRepository {
 		return account;
 	}
 
-	public void updateBeneficiaries(Account account) {
+	@Override
+	public void updateAccount(Account account) {
+
 	}
+
 }

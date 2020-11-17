@@ -4,5 +4,5 @@ public interface ProfileRepository {
 
     public Profile findByPerson(Long personId);
 
-    public void updatePerson(Profile account);
+    public void updateProfile(Profile account);
 }
