@@ -5,14 +5,16 @@ public class Account  {
 	private Long id;
 	private String accountNumber;
 	private String name;
+	private Long balance;
 
 	public Account() {
 	}
 
-	public Account(Long id, String accountNumber, String name) {
+	public Account(Long id, String accountNumber, String name, Long balance) {
 		this.id = id;
 		this.accountNumber = accountNumber;
 		this.name = name;
+		this.balance = balance;
 	}
 
 	@Override
@@ -22,6 +24,22 @@ public class Account  {
 				", number='" + accountNumber + '\'' +
 				", name='" + name + '\'' +
 				'}';
+	}
+
+	public void deposit(Long amount) {
+		this.balance += amount;
+	}
+
+	public void withdraw(Long amount) {
+		this.balance -= amount;
+	}
+
+	public Long getBalance() {
+		return balance;
+	}
+
+	public void setBalance(Long balance) {
+		this.balance = balance;
 	}
 
 	public Long getId() {
