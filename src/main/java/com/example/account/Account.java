@@ -3,15 +3,15 @@ package com.example.account;
 public class Account  {
 
 	private Long id;
-	private String number;
+	private String accountNumber;
 	private String name;
 
 	public Account() {
 	}
 
-	public Account(Long id, String number, String name) {
+	public Account(Long id, String accountNumber, String name) {
 		this.id = id;
-		this.number = number;
+		this.accountNumber = accountNumber;
 		this.name = name;
 	}
 
@@ -19,7 +19,7 @@ public class Account  {
 	public String toString() {
 		return "Account{" +
 				"id=" + id +
-				", number='" + number + '\'' +
+				", number='" + accountNumber + '\'' +
 				", name='" + name + '\'' +
 				'}';
 	}
@@ -32,12 +32,12 @@ public class Account  {
 		this.id = id;
 	}
 
-	public String getNumber() {
-		return number;
+	public String getAccountNumber() {
+		return accountNumber;
 	}
 
-	public void setNumber(String number) {
-		this.number = number;
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
 	}
 
 	public String getName() {
