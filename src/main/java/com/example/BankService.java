@@ -5,6 +5,6 @@ import com.example.account.Account;
 
 public interface BankService {
 
-	public Confirmation transferMoney(Account from, Account to, Long amount);
+	public Confirmation transferMoney(String accountFrom, String accountTo, Long amount);
 
 }

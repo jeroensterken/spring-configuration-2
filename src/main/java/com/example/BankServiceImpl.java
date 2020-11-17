@@ -18,7 +18,7 @@ public class BankServiceImpl implements BankService {
 		this.profileRepository = profileRepository;
 	}
 
-	public Confirmation transferMoney(Account from, Account to, Long amount) {
+	public Confirmation transferMoney(String accountFrom, String accountTo, Long amount) {
 		// TODO-01: transfer money from account 'from', to account 'to' per the sequence diagram
 		// TODO-02: Return the corresponding reward confirmation
 		return null;
