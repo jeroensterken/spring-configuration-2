@@ -11,8 +11,11 @@ public class StubAccountRepository implements AccountRepository {
 	private Map<String, Account> accountsByCreditCard = new HashMap<String, Account>();
 
 	public StubAccountRepository() {
-		Account account = new Account();
-		accountsByCreditCard.put("1234123412341234", account);
+		Account accountFrom = new Account(1L, "123456789", "who", 100L);
+		accountsByCreditCard.put("123456789", accountFrom);
+
+		Account accountTo = new Account(2L, "987654321", "who", 100L);
+		accountsByCreditCard.put("987654321", accountTo);
 	}
 
 	public Account findByCreditCard(String creditCardNumber) {
