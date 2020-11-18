@@ -1,4 +1,4 @@
-package com.example;
+package com.example.person;
 
 import com.example.person.Person;
 import com.example.person.PersonRepository;

@@ -1,4 +1,4 @@
-package com.example;
+package com.example.profile;
 
 import com.example.profile.Profile;
 import com.example.profile.ProfileRepository;
