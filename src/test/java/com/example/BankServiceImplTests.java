@@ -1,6 +1,7 @@
 package com.example;
 
 import com.example.account.StubAccountRepository;
+import com.example.config.ApplicationConfig;
 import com.example.person.PersonRepository;
 import com.example.person.StubPersonRepository;
 import com.example.profile.ProfileRepository;
@@ -9,6 +10,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import com.Confirmation;
 import com.example.account.AccountRepository;
+import org.springframework.boot.SpringApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
@@ -27,7 +31,8 @@ public class BankServiceImplTests {
 
 	@BeforeEach
 	public void setUp() throws Exception {
-
+		ConfigurableApplicationContext ctx = SpringApplication.run(ApplicationConfig.class);
+		bankService = ctx.getBean(BankService.class);
 	}
 
 	@Test

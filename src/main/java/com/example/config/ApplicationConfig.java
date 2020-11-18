@@ -1,30 +1,41 @@
 package com.example.config;
 
-/**
- * TODO-01: Make this class a Spring configuration class
- * - Use an appropriate annotation.
- */
+import com.example.BankService;
+import com.example.BankServiceImpl;
+import com.example.account.AccountRepository;
+import com.example.account.StubAccountRepository;
+import com.example.person.PersonRepository;
+import com.example.person.StubPersonRepository;
+import com.example.profile.ProfileRepository;
+import com.example.profile.StubProfileRepository;
+import org.springframework.context.annotation.Bean;
 
-/**
- * TODO-02: Define four empty @Bean methods, one for the bankSerivce and 3 for the repositories
- * - The name of the bean should be:
- * - bankService
- * - accountRepository
- * - PersonRepository
- * - ProfileRepository
- */
-
-/**
- * TODO-03: implement each @Bean method to contain the code needed to instantiate its object and set it's dependencies
- * create from the following implementation classes:
- * - bankService bean from BankServiceImpl class
- * - accountRepository bean from StubAccountRepository
- * - PersonRepository bean from StubPersonRepository
- * - ProfileRepository bean from StubProfileRepository
- *
- * Note that return type of each bean method should be an interface not an implementation.
- */
 public class ApplicationConfig {
 
+    @Bean
+    public BankService rewardNetwork(AccountRepository accRepo, PersonRepository personRepo, ProfileRepository profileRepo){
+        return new BankServiceImpl(
+                accRepo,
+                personRepo,
+                profileRepo);
+    }
+
+    @Bean
+    public ProfileRepository profileRepository() {
+        StubProfileRepository repository = new StubProfileRepository();
+        return repository;
+    }
+
+    @Bean
+    public PersonRepository personRepository() {
+        StubPersonRepository repository = new StubPersonRepository();
+        return repository;
+    }
+
+    @Bean
+    public AccountRepository accountRepository(){
+        StubAccountRepository repository = new StubAccountRepository();
+        return repository;
+    }
 
 }
