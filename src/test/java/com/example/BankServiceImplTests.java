@@ -14,11 +14,15 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 /**
  * TODO-04:
  *  In the setUp() method, create an application context using the 'ApplicationConfig' configuration class
- *  Then get the 'bankService' bean and assign it to the private field 'bankService'
  */
 
 /**
  * TODO-05:
+ *   Next get the 'bankService' bean out of the Spring Application Context and assign it to the existing private field 'bankService'
+ */
+
+/**
+ * TODO-06:
  *  Run the test, it should pass. But now we have Spring instantiate & link the different objects together
  */
 public class BankServiceImplTests {
